@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Pelajaran Realtime</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="interactive-bg"></canvas>
+    <div class="app-container">
+
+        <!-- Header Section -->
+        <header class="main-header">
+            <div>
+                <h1>Jadwal Pelajaran</h1>
+                <p class="subtitle">XII ITCP - Tahun Ajaran 2025/2026</p>
+                <div class="current-date" id="dateDisplay">Senin, 1 Januari 2024</div>
+            </div>
+            <div class="current-time" id="clockDisplay">
+                00:00:00
+            </div>
+        </header>
+
+        <!-- Active Class Card -->
+        <section class="hero-section">
+            <div class="active-card" id="activeCard">
+                <div class="status-badge" id="statusBadge">Sedang Berlangsung</div>
+                <h2 class="subject-title" id="currentSubject">Loading...</h2>
+                <p class="teacher-name" id="currentTeacher">Loading...</p>
+                <div class="time-range" id="currentTimeRange">--:-- - --:--</div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                <p class="next-up" id="nextSubject">Selanjutnya: ...</p>
+            </div>
+        </section>
+
+        <!-- Day Selector -->
+        <div class="day-selector" id="daySelector">
+            <!-- Will be populated by JS -->
+        </div>
+
+        <!-- Schedule List -->
+        <section class="schedule-list" id="scheduleList">
+            <!-- Will be populated by JS -->
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
